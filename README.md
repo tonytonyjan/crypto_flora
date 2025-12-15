@@ -2,6 +2,10 @@
 
 A beautiful web-based tool that visualizes SHA-256 hashes as unique botanical art using polar coordinates.
 
+## Screenshot
+
+![](screenshot.png)
+
 ## Overview
 
 CryptoFlora transforms any text input into a unique flower-like visualization by mapping SHA-256 hash bytes to various artistic parameters. Each hash produces a completely unique piece of art, demonstrating the deterministic yet unpredictable nature of cryptographic hash functions.
