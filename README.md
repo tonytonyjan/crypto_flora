@@ -60,3 +60,9 @@ Where:
 - `shapeFactor` = controls sharpness
 - `amp` = amplitude (petal size)
 - `harmonicNoise` = additional sine wave for organic variation
+
+## Use Cases and Ideas
+
+1. **Icebreakers**: Use the tool in social settings to generate flowers from attendees' names or favorite words, and attendees can gather other people with matching flowers, or can collect flowers by scanning QR codes to make a bouquet.
+2. **Gifts**: Generate personalized flower art based on names or messages.
+3. **Digital Art**: Create unique digital artworks for personal use or NFTs.
