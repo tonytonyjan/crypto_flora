@@ -1,6 +1,6 @@
 # CryptoFlora
 
-A beautiful web-based tool that visualizes SHA-256 hashes as unique botanical art using polar coordinates.
+A beautiful web-based tool that visualizes SHA-256 hashes as unique botanical art using rose curves.
 
 ## Screenshot
 
