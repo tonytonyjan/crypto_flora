@@ -256,21 +256,22 @@
 
             // Central Detail (Stamen/Pistil area)
             // Use bytes 28-31
-            const centerRadius = (bytes[28] % 30) + 10;
+            const centerRadius = ((bytes[28] % 30) + 10) * ctx.canvas.width / 800; // Scale with canvas size
             ctx.beginPath();
             ctx.arc(0, 0, centerRadius, 0, Math.PI * 2);
             ctx.fillStyle = `hsla(${(baseHue + 180) % 360}, 80%, 80%, 1)`; // Complementary color
             ctx.fill();
             
             // Decorate center
-            const centerDots = (bytes[29] % 8) + 4;
+            const centerDots = ((bytes[29] % 8) + 4);
+            const dotRadius = 2 * ctx.canvas.width / 800;
             for(let d=0; d<centerDots; d++) {
                 const dotAngle = (d / centerDots) * Math.PI * 2;
                 const dotR = centerRadius * 0.7;
                 const dx = Math.cos(dotAngle) * dotR;
                 const dy = Math.sin(dotAngle) * dotR;
                 ctx.beginPath();
-                ctx.arc(dx, dy, 2, 0, Math.PI*2);
+                ctx.arc(dx, dy, dotRadius, 0, Math.PI*2);
                 ctx.fillStyle = '#fff';
                 ctx.fill();
             }
